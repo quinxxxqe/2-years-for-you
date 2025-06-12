@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>С Двухлетием, Тасенька ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: radial-gradient(circle at top, #ffe0ec, #fad0c4);
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      color: #d6336c;
+      padding: 30px;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3.5em;
+      text-shadow: 2px 2px #fff;
+      margin-top: 20px;
+      animation: fadeIn 3s ease forwards;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .photo {
+      width: 300px;
+      height: 300px;
+      background: url('us.jpg') center/cover no-repeat;
+      border: 6px solid #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ff99bb;
+      margin: 20px auto;
+      animation: fadeIn 4s ease forwards;
+    }
+    .message {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      padding: 20px;
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.2em;
+      color: #b8004c;
+      max-width: 600px;
+      margin-top: 20px;
+      box-shadow: 0 0 15px #f9c5d1;
+      animation: fadeIn 5s ease forwards;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 1em;
+      color: #8a2c52;
+      font-family: 'Open Sans', sans-serif;
+      animation: fadeIn 6s ease forwards;
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      left: 50%;
+      top: 100%;
+      margin-left: -10px;
+      border-radius: 50%;
+      animation: rise 8s linear infinite;
+      opacity: 0.6;
+      transform: rotate(45deg);
+    }
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+    @keyframes rise {
+      0% { top: 100%; opacity: 0.8; }
+      100% { top: -10%; opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>С 2-летней годовщиной, Тасенька! ❤️</h1>
+
+  <div class="photo"></div> <!-- Здесь вставишь фото, заменив 'ВАШЕ_ФОТО_ЗДЕСЬ.jpg' в CSS -->
+
+  <div class="message">
+    Моя нежная Тася,<br><br>
+    Уже два года ты наполняешь мою жизнь светом, теплом и смыслом. Спасибо за каждую улыбку, за каждую минуту рядом — пусть даже и на расстоянии. <br><br>
+    Тася, я кохаю тебе до безмежності. Ти — моє серце, моя радість, мій всесвіт. <br><br>
+    Нехай попереду буде ще багато-багато таких щасливих років разом. ❤️
+  </div>
+
+  <div class="footer">
+    Навсегда твой ❤️
+  </div>
+
+  <!-- Летающие сердечки -->
+  <script>
+    for (let i = 0; i < 30; i++) {
+      let heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.animationDuration = 5 + Math.random() * 5 + 's';
+      heart.style.opacity = 0.3 + Math.random() * 0.7;
+      document.body.appendChild(heart);
+    }
+  </script>
+
+</body>
+</html>
